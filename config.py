@@ -1,1 +1,1 @@
-TOKEN = '7230188255:AAFoS3GtxsuKlvwvcY89-40PpgVdN_QGm2M'
+TOKEN = 'your TOKEN for bot from Telegram'
