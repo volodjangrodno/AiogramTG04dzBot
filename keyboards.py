@@ -22,7 +22,7 @@ more = ["Опция 1", "Опция 2"]
 async def options_keaboard():
     keyboard = InlineKeyboardBuilder()
     for key in more:
-        keyboard.add(InlineKeyboardButton(text=key, callback_data=f'option {key}'))
+        keyboard.add(InlineKeyboardButton(text=key, callback_data=f'{key}'))
 
     return keyboard.adjust(2).as_markup()
 
