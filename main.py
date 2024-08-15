@@ -50,14 +50,14 @@ async def more(callback: CallbackQuery):
     await callback.answer("Опции подгружаются")
     await callback.message.edit_text('Выбери опцию', reply_markup=await kb.options_keaboard())
 
-@dp.callback_query(F.data == 'option 1')
+@dp.callback_query(F.data == 'Опция 1')
 async def option_1(callback: CallbackQuery):
     # Отправляем сообщение с названием клавиши
     await callback.message.answer(f"Опция 1")
     # Не забываем ответить на callback, чтобы убрать "часики"
     await callback.answer()
 
-@dp.callback_query(F.data == 'option 2')
+@dp.callback_query(F.data == 'Опция 2')
 async def option_2(callback: CallbackQuery):
     # Отправляем сообщение с названием клавиши
     await callback.message.answer(f"Опция 2")
